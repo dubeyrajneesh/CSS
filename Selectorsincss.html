@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <style>
+        /*  There are 4 types of selectors in css
+        
+        1. Element Selector
+        2. ID Selector
+        3. Class Selector
+        4. Grouping Selector
+        
+        */
+
+        /*  1. Element Selector */
+
+        header{
+            color: green;
+            border: 2px solid blue;
+
+        }
+
+        p{
+            color: yellow;
+            border: 2px solid purple;
+
+            
+        }
+
+        /*  2. ID Selector */
+        #head1{
+            color:red;
+            border: 2px solid black;
+            font-size: large;
+        }
+
+        /* 3. Class Selector */
+        .span2{
+            color: peru;
+            border: 2px solid green;
+        }
+
+        /* 4. Grouping Selector */
+        header,div,footer,#head1{
+            color:brown;
+            border: 2px solid black;
+            background-color:azure;
+        }
+          
+
+
+
+
+    </style>
+</head>
+<body>
+    <h3>Selectors in CSS</h3>
+    <header id="head1" class="head2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quis. Officia ex numquam facere.</header>   
+    <p id="p1" class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere amet tempore beatae nemo expedita?</p>
+    <span id="span1" class="span2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum recusandae natus.</span><br><br>
+    <div id="div1" class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, amet!</div><br>
+    <footer id="foot1" class="foot2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, maxime repudiandae numquam pariatur ipsa magni.</footer>
+    
+</body>
+</html>
