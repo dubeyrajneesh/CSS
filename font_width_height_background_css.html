@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Font,Background</title>
+
+    <style>
+        h3{
+            font-size: 40px;
+            font-weight:bolder;
+            font-style:normal;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /*  width in percentage means to percent of parent element */
+
+        /*  1px = 1/96th of an inch */
+        .para1{
+            height:200px;
+            width:50%;
+            border: 4px solid black;   
+            background-color:aquamarine;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 40px;
+            border-bottom-left-radius: 60px;
+        }
+
+        /* 
+          border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+            Above 4 lines can be written in single line:   border-radius: 50px ;  
+        
+        
+        */
+
+        /* width=50%  means it will take half of width of your parent element */
+
+        .para2{
+            height: 250px;
+            width:50%;
+            border: 4px solid red;
+            background-color:antiquewhite;
+            border-radius: 25px;
+        }
+
+        /*  border: 2px solid green;  it is shortcut for border to write in a single line */
+    </style>
+</head>
+<body>
+    <h3>Height,Width,Font,Background</h3>
+    <p id=" p1" class="para1">Lorem ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum. ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.</p>
+
+    <p id="p2" class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda mollitia id dolorem voluptas. ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.ipsum dolor sit amet consectetur adipisicing  Asperiores repellendus enim eum.</p>
+</body>
+</html>
