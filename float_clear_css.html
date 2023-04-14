@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+
+    <style>
+          
+          .container{
+            background-color:antiquewhite;
+            width: 700px;
+            border: 2px solid red;
+            margin: 30px auto;
+          }
+
+          .store{
+            border: 2px solid yellow;
+            width: 40% ;
+            /* margin: auto; */
+            padding: 10px 10px;
+            /* float: left; */
+          }
+
+          #general{
+            float: left;
+          
+          }
+
+          #Medical{
+            float:  left;
+            clear: both;
+          }
+          #Fair{
+             float: left;
+             clear: both;
+          }
+          #Mega{
+            float: left;
+            clear: both;
+          }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+
+            <div id="general" class="store">
+                <h3>General Store</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam saepe dolore facilis voluptatem id officia tempora in perspiciatis cumque iste. Aliquam corrupti, magni quos error unde soluta ullam dicta praesentium, minus porro, animi provident quae illo sequi ipsum ea quisquam!</p>
+            </div>
+
+            <div id="Medical" class="store">
+                <h3>Medical Store</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam saepe dolore facilis voluptatem id officia tempora in perspiciatis cumque iste. Aliquam corrupti, magni quos error unde soluta ullam dicta praesentium, minus porro, animi provident quae illo sequi ipsum ea quisquam!</p>
+            </div>
+
+            <div id="Fair" class="store">
+                <h3>Fair Store</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam saepe dolore facilis voluptatem id officia tempora in perspiciatis cumque iste. Aliquam corrupti, magni quos error unde soluta ullam dicta praesentium, minus porro, animi provident quae illo sequi ipsum ea quisquam!</p>
+            </div>
+
+            <div id="Mega" class="store">
+                <h3>Mega Store</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam saepe dolore facilis voluptatem id officia tempora in perspiciatis cumque iste. Aliquam corrupti, magni quos error unde soluta ullam dicta praesentium, minus porro, animi provident quae illo sequi ipsum ea quisquam!</p>
+            </div>
+        </div>
+</body>
+</html>
