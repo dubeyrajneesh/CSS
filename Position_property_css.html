@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in css</title>
+
+    <style>
+        .div1{
+            border: 2px solid red;
+            /* width: 80%; */
+            height:3500px;
+        }
+        .box1{
+            border: 2px solid yellow;
+            width:10%;
+            display:inline-block;
+        }
+
+         /*  Display: Inline-block ;
+         Now your targetting element is inline but you can set width as well as height in this element.
+         */
+
+         #main1{
+             position: absolute;
+             /* top: 100px; */
+             right: 100px;
+             /* bottom: 100px; */
+         }
+
+         /* 
+            Position: absolute;
+            This means position is going to change with respect to your parent element .
+         
+         */
+
+         #main2{
+             position: relative ;
+             top: 100px;
+         }
+
+         /* 
+         Position: relative ;
+         This means now your position will change according to your old position . 
+         */
+
+         #main3{
+            position: fixed;
+            bottom: 20px;
+         }
+
+         /* 
+         position: fixed;
+         This means position is fixed when you scroll
+         
+         */
+
+         #main4{
+            position: sticky ;
+            top: 10px;
+         }
+
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+
+       
+        <div id="main1" class="box1">
+            <h3>This is Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, earum!</p>
+        </div>
+        <div id="main2" class="box1">
+            <h3>This is Box 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, earum!</p>
+        </div>
+        <div id="main3" class="box1">
+            <h3>This is Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, earum!</p>
+        </div>
+        <div id="main4" class="box1">
+            <h3>This is Box 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, earum!</p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
