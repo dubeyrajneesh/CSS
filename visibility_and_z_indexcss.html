@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z index</title>
+
+    <style>
+        .mainbox{
+        border: 2px solid red;
+    }
+
+
+   #box1{
+        background-color:aquamarine;
+        width: 100px;
+        height: 100px ;
+        position: relative;
+        top:70px;
+        z-index: -1;
+    }
+
+    #box2{
+        background-color:blueviolet;
+        width: 100px;
+        height: 100px ;
+        position: relative;
+        top:70px;
+        z-index: -1;
+    }
+
+    #box3{
+        background-color:black;
+        width: 100px;
+        height: 100px ;
+        /* visibility: hidden; */
+        /* display: none; */
+        z-index: 1;
+    }
+
+
+
+
+    /* 
+    
+    visibility: hidden ;
+    Above statement means that box is not visible but their space is visible  ;
+
+    display: none ;
+    Above statement means box as well as their space both will not be visible ;
+    
+    
+    
+    */
+
+    #box4{
+        background-color:brown;
+        width: 100px;
+        height: 100px ;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
