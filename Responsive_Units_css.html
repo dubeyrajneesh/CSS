@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_Units</title>
+
+    <style>
+        html{
+            font-size: 40px ;
+        }
+
+        .container{
+            font-size:30px;
+            border: 2px solid red ;
+            /* height: 500px;
+            width: 500px; */
+
+            width: 100vw;
+            height: 100vh;
+
+
+        }
+
+        #box1{
+            font-size: 4em;
+        }
+
+        /*  em means with respect to their parent element in this case parent element is container size of font-size of container is 30px so the size of font of box 1 is 60px in case of 2em and 90px inn case of 3em */
+
+        #box2{
+            font-size: 2rem ;
+        }
+
+        /*  rem means with respect to root element such as in this case font-size of root elemet is 40px so 2rem means 80px and 3rem means 120px and so on */
+
+        #box3{
+            font-size: 4em ;
+        }
+
+        #box4{
+            font-size: 2rem ;
+        }
+
+        /*  Size of heading 1 and heading 3 will be same and font size of heading 2 and heading 4 will be same  */
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h3 id="box1">This is heading 1</h3>
+        <h3 id="box2">This is heading 2</h3>
+        <h3 id="box3"> This is heading 3</h3>
+        <h3 id="box4">This is heading 4</h3>
+    </div>
+</body>
+</html>
