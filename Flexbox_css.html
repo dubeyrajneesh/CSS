@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        .box{
+            border: 2px solid red;
+            height: 500px;
+
+            display: flex;
+
+            /*  flex-direction */
+
+            flex-direction: column;
+            /*  It is by default value of flex-direction */
+
+            flex-direction:row;
+            /*   This means all boxes will come in same line    */
+
+            flex-direction: row-reverse;
+            /*  All the boxes will be in reverse order horizontally */
+
+            flex-direction: column-reverse;
+            /* All the boxes will be in reverse order but vertically */
+
+
+            /*  flex-wrap */
+
+            flex-wrap: nowrap;
+            /*  It is by difault value of flex-wrap */
+
+            flex-direction: row;
+
+            flex-wrap: wrap;
+            /*  Now when we dicrease the width of the container thern the boxes will automatically move to the next line . */
+
+            flex-wrap: wrap-reverse ;
+             /*  Now when we dicrease the width of the container ther the boxes will automatically move to the next line but now in reverse order; */
+
+
+             /*  flex-flow property */
+
+             flex-flow: row wrap;
+             /*   The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties   */
+
+
+             /*  Justify content  */
+
+             justify-content: center;
+             /*  This will do horizontally center */
+
+             justify-content: space-around;
+             /*  At both the end the spaces will be same */
+
+             justify-content:space-between;
+             /*  Between the boxes the spaces will be same but at both the end there will be no spaces */
+
+             justify-content: space-evenly;
+             /*  Spaces will be same at the end as well as between the boxes */
+
+
+
+             /*  Align-Item  Property*/
+
+             align-items: center ;
+             /*  It is used for vertically center */
+
+             align-items: flex-end;
+             /*  All the will move towars downwards  vertically*/
+
+             align-items: flex-start;
+             /*  All the boxes are on upper side */
+
+
+             /*  Justify content is a property of horizontally whilw align-items is a property of vertiaclly */
+
+             /*  Align Content Property */
+             align-content: baseline;
+             align-content:center;
+
+
+
+            
+        }
+        .main{
+            border: 2px solid green;
+            width: 100px;
+            height: 100px ;
+            /* display: inline-block; 
+            Display: inline-block;  means all container will come in same line but also we can set height as well as width of the container.
+            */
+
+           
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div class="main" id="box1">This is box 1</div>
+        <div class="main" id="box2">This is box 2</div>
+        <div class="main" id="box3">This is box 3</div>
+        <div class="main" id="box4">This is box 4</div>
+        <div class="main" id="box5">This is box 5</div>
+    </div>
+</body>
+</html>
