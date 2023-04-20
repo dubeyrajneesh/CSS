@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Flexbox</title>
+
+    <style>
+
+
+                      /*  properties of a container */
+         /* 
+         1. flex-direction
+         2. flex-wrap
+         3. flex-flow
+         4. justify-content
+         5. align-items
+         6. align-content 
+         
+         */
+
+
+
+        .container{
+
+            border: 2px solid red ;
+            height: 600px;
+
+
+            display: flex;
+            /*  display: flex;
+            It is a property of a container and it means all boxes will came in same line */
+
+            flex-direction: row;
+            /*  It is a by default value no change will occurenece  */
+
+            flex-direction: row-reverse;
+            /*  now the boxes are in reverse order starting from the extreme right position */
+
+            flex-direction: column;
+            /*  Now the boxes are arranges from top to bottom */
+
+            flex-direction: column-reverse;
+            /*  now the boxes will arrange in from bottom to top */
+
+                       
+               /*  flex-wrap Properties */
+
+               flex-direction: row;
+
+               flex-wrap: nowrap;
+               /*  It is a by default value */
+
+               flex-wrap: wrap;
+               /*  Now when we decrease the width of a container then the boxes will automatically move to the second line */
+
+               flex-wrap: wrap-reverse;
+
+
+                         /*  flex-flow property */
+            /*  flex-flow property is basically a shorthand property of flex-direction and flex-wrap */
+
+            flex-flow: column nowrap;
+            flex-flow: row wrap;
+            flex-flow: row wrap-reverse;
+            flex-flow: column wrap-reverse;
+
+            /*  So basically flex flow is a prpoerty which is short-cut for setting flex-direction and flex-wrap */
+
+                        /*   Justify Content */
+
+        /* 
+
+        1. justify-content: flex-start;
+        2. justify-content: flex-end;
+        3. justify-content: center;
+        4. justify-content: space-around;
+        5. justify-content: space-between;
+        6. justify-content: space-evenly;
+        
+        */
+
+       flex-flow: row nowrap ;
+
+        justify-content: center;
+        /*  all the boxes will be in the cenetr */
+
+        justify-content: flex-start;
+        /* all the boxes will arrange in sequential order starting from the start */
+
+        justify-content: flex-end;
+        /*  last box will be at extreme right position */
+
+        justify-content: space-around;
+        /*  spaces at the starting and at the ending will be the same */
+
+        justify-content: space-evenly;
+        /*  throught out the row space will remain same */
+
+        justify-content: space-between;
+        /*  space between the boxes will remain same */
+
+
+                     /*  align-items property */
+                     flex-flow: row wrap;
+
+        
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center ;
+        align-items: baseline ;
+
+
+                  /*  align-content property */
+        
+        align-content: flex-start;
+        align-content: flex-end;
+        align-content: center ;
+        align-content: space-between ;
+        align-content: space-around;
+        align-content: space-evenly;
+
+        flex-flow: row wrap;
+
+
+
+
+
+            
+        }
+
+                     
+
+        
+
+        .box{
+            border: 2px solid green ;
+            width: 50px;
+            height: 50px ;
+        }
+
+   #box1{
+    flex-grow: 2;
+   }
+
+   #box2{
+    flex-grow: 3;
+   }
+
+        #box3{
+            order: 4;
+            flex-grow: 2;
+            
+        }
+
+        #box4{
+            order: 6;
+            flex-grow: 2;
+        }
+        #box5{
+            flex-grow: 2;
+        }
+
+        #box6{
+            flex-grow: 2;
+            order: 8;
+        }
+
+        #box7{
+            flex-grow: 2;
+        }
+
+        #box8{
+            flex-grow: 2;
+        }
+
+        #box9{
+            flex-grow: 2;
+        }
+
+        #box10{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box1"> This is box 1</div>
+        <div class="box" id="box2"> This is box 2</div>
+        <div class="box" id="box3">This is box 3</div>
+        <div class="box" id="box4">This is box 4</div>
+        <div class="box" id="box5">This is box 5</div>
+        <div class="box" id="box6">This is box 6</div>
+        <div class="box" id="box7">This is box 7</div>
+        <div class="box" id="box8">This is box 8</div>
+        <div class="box" id="box9">This is box 9</div>
+        <div class="box" id="box10">This is box 10</div>
+    </div>
+    
+</body>
+</html>
