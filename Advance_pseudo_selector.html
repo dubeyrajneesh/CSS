@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Advance pseudo selectors </title>
+
+    <style>
+   
+   div p{
+
+    color:aquamarine;
+    background-color: blueviolet;
+   }
+
+   div > p{
+    border: 2px solid red ;
+   }
+
+   div + P{
+    border: 4px solid yellow ;
+   }
+
+    </style>
+</head>
+<body>
+       <div class="container">
+
+        <div class="box">
+            <div class="box2">
+                <p> This is para 1 inside div
+                <ul>
+                    <li>
+                        This is list 
+                    </li>
+                </ul>
+
+            </p>
+            </div>
+
+            <p> This is another para inside div</p>
+        </div>
+       </div>
+       <p> This is para after div</p>
+       <p> This is after another para</p>
+</body>
+</html>
