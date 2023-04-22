@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+
+
+.main{
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    width: 100vw;
+    height: 100vh;
+}
+                             /*  Text Shadow Property */
+
+
+    h1{
+
+        font-size:40px;
+        text-align: center;
+        
+        /*  text shadow in x and y direction */
+        text-shadow: 2px 2px;
+
+        /*  text-shadow with color */
+        text-shadow: 2px 2px red;
+
+        /*  text-shadow with blur  */
+        text-shadow: 2px 2px 3px red ;
+
+        /*  text shadow with spreading radius */
+        text-shadow: 2px 2px 3px 4px red ;
+
+        /*  text shadow with multiple effect */
+        text-shadow: 2px 2px red , 2px 3px green , 3px 2px yellow ;
+    }
+
+
+                           /*  Box Shadow Property */
+
+    
+     .container{
+
+        width: 500px;
+        height: 500px ;
+        margin: 12px 10px;
+        padding: 15px 10px ;
+        border: 2px solid green;
+
+        /*  box Shadow in x and y direction */
+        box-shadow: 3px 3px ;
+
+        /*  Box Shadow with color */
+        box-shadow: 4px 4px red ;
+
+        /*  Box shadow with blur */
+        box-shadow: 4px 4px 4px red ;
+
+        /*  Box Shadow with blur as well as spreading radius */
+        box-shadow: 4px 4px 3px 5px red ;
+
+        /*  Box shadow with multiple effect */
+        box-shadow: 2px 4px green , 3px 2px red , 3px 5px green, 5px 3px blue;
+
+     }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1> This is heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, labore magnam. Ratione, rem fugiat nesciunt, libero laudantium tempore asperiores at expedita eum rerum omnis quidem error odio est odit debitis vitae architecto sit recusandae excepturi molestias aut dolore necessitatibus. Voluptates consequuntur, ullam nam sunt velit sint officia facilis ducimus voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio molestias mollitia, ipsum voluptatibus natus possimus dolorum aliquid perferendis blanditiis dolorem ut dicta at, omnis animi, earum voluptate magnam soluta eum? Officiis repudiandae sed ducimus dolore. Corrupti hic rerum sit minus animi consectetur tempora dolorum eligendi neque, illum laborum eaque maxime, repudiandae totam explicabo perferendis voluptatibus, est recusandae blanditiis atque rem quae dolore? Sapiente earum illum animi totam dignissimos beatae?</p>
+    </div>
+
+</div>
+</body>
+</html>
