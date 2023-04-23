@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+   
+        .container{
+            background-color: yellow;
+            width: 1000px;
+            height: 450px;
+        }
+
+        .box{
+
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            
+      
+             /*  Animation Property */
+
+    animation-name: danger ;
+    /*   you will set any name in animation-name it is important property without this you can execute your animation */
+
+    animation-duration : 4s ;
+    /*   By default animation-duration is 0s so if you will not set the animation duration the you will not able to see any effect because by default animation duration is 0 sec so you have to set animation duration  */
+
+    animation-delay : 2s ;
+    /*  animation delay basically tells about the time after what time your animation will start. in the above example animation will start after 2s and then it will go for 4s*/
+
+    animation-iteration-count: 3;
+    /*  animation iteration count will tell you how many times you want to show your animation by default its value is 1 if you will not set any value then it will show you animation 1 time and after that it will stop */
+
+    animation-timing-function:ease-in-out ;
+
+    
+
+    /*  There are so many other properties of animation also but these are the some important properties */
+
+
+
+
+        }
+
+      /*
+        @keyframes danger{
+
+            from{
+                width: 0px;
+            }
+
+            to{
+                width:400px ;
+            }
+        }
+        */
+
+        @keyframes danger{
+
+            0%{
+                background-color:aquamarine;
+            }
+            25%{
+                background-color:blueviolet;
+            }
+            50%{
+                background-color: antiquewhite;
+            }
+            75%{
+                background-color:brown;
+            }
+            100%{
+                background-color:black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+   <div class="box">
+    This is box
+   </div>
+
+    </div>
+</body>
+</html>
